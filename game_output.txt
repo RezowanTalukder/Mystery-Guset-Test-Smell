@@ -1,0 +1,314 @@
+
+/src/AgentsTest.java
+====================
+
+
+
+Line No: 24 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 18,col 29)] - Optional[(line 31,col 2)] ] 
+
+{
+    Agents agents = new Agents();
+    int depth = 4;
+    agents.setDepthCounter(depth);
+    File file = new File("C://data//person2.txt");
+    int expected = agents.getDepthCounter();
+    assertEquals(expected, 4);
+}
+
+
+
+Line No: 43 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 34,col 29)] - Optional[(line 46,col 2)] ] 
+
+{
+    Agents agents = new Agents();
+    int depth = 4;
+    boolean expected = false;
+    if (agents.setDepthCounter(depth)) {
+        expected = true;
+    }
+    File file = new File("C://data//person2.txt");
+    assertEquals(expected, true);
+}
+
+
+
+Line No: 55 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 49,col 30)] - Optional[(line 64,col 2)] ] 
+
+{
+    Agents agents = new Agents();
+    int finalPosition = 2;
+    agents.setFinalPosition(finalPosition);
+    File file = new File("C://data//person2.txt");
+    int expected = agents.getFinalPosition();
+    assertEquals(expected, 2);
+}
+
+/src/GameTest.java
+==================
+
+
+
+Line No: 13 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 8,col 27)] - Optional[(line 15,col 2)] ] 
+
+{
+    Game game = new Game();
+    int hight = game.getBoardHight();
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(hight, 4);
+}
+
+
+
+Line No: 63 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 58,col 28)] - Optional[(line 65,col 2)] ] 
+
+{
+    Game game = new Game();
+    boolean h = game.setBoardBredth(4);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(h, true);
+}
+
+
+
+Line No: 87 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 82,col 27)] - Optional[(line 93,col 2)] ] 
+
+{
+    Game game = new Game();
+    boolean opo = game.checkOponent(3);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(opo, true);
+}
+
+
+
+Line No: 113 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 108,col 27)] - Optional[(line 117,col 2)] ] 
+
+{
+    Game game = new Game();
+    boolean opo = game.checkOponent(3);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(opo, true);
+}
+
+/src/NodeTest.java
+==================
+
+
+
+Line No: 70 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 62,col 20)] - Optional[(line 71,col 2)] ] 
+
+{
+    Expand expand = new Expand();
+    int[][] State;
+    State = new int[3][4];
+    int j = 1;
+    boolean Player = true;
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertNotEquals(expand.AddChild(State, j, Player), State);
+}
+
+
+
+Line No: 146 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 140,col 21)] - Optional[(line 149,col 2)] ] 
+
+{
+    Expand expand = new Expand();
+    int[][] State;
+    State = new int[3][4];
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    int j = 1;
+    boolean Player = true;
+    assertNotEquals(expand.AddChild(State, j, Player), State);
+}
+
+
+
+Line No: 161 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 153,col 21)] - Optional[(line 162,col 2)] ] 
+
+{
+    Expand expand = new Expand();
+    int[][] State;
+    State = new int[3][4];
+    int j = 0;
+    boolean Player = false;
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertNotEquals(expand.AddChild(State, j, Player), State);
+}
+
+/src/ProblemTest.java
+=====================
+
+
+
+Line No: 15 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 8,col 22)] - Optional[(line 16,col 2)] ] 
+
+{
+    int min = 0;
+    int max = 7;
+    Problem pro = new Problem();
+    int exp = pro.cutFunc(max, min);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(exp, 3);
+}
+
+
+
+Line No: 37 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 30,col 22)] - Optional[(line 38,col 2)] ] 
+
+{
+    int min = 0;
+    int max = 8;
+    Problem pro = new Problem();
+    int exp = pro.cutFunc(max, min);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(exp, 4);
+}
+
+
+
+Line No: 81 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 74,col 22)] - Optional[(line 82,col 2)] ] 
+
+{
+    int min = 8;
+    int max = 0;
+    Problem pro = new Problem();
+    int exp = pro.cutFunc(max, min);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(exp, 4);
+}
+
+
+
+Line No: 127 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 122,col 25)] - Optional[(line 128,col 2)] ] 
+
+{
+    Problem prob = new Problem();
+    assertEquals(prob.setWin_size(4), true);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+}
+
+
+
+Line No: 161 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 155,col 29)] - Optional[(line 161,col 2)] ] 
+
+{
+    Problem prob = new Problem();
+    int[][] state;
+    state = new int[3][4];
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//hello//person2.txt");
+    assertEquals(prob.setInitialState(state), true);
+}
+
+
+
+Line No: 202 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 193,col 21)] - Optional[(line 204,col 2)] ] 
+
+{
+    Problem prob = new Problem();
+    int[][] state;
+    state = new int[3][4];
+    BufferedReader br = new BufferedReader();
+    int j = 3;
+    boolean b = prob.Action(state, j);
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//person.txt");
+    assertEquals(b, true);
+}
+
+
+
+Line No: 242 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 238,col 18)] - Optional[(line 241,col 2)] ] 
+
+{
+    // fail("Not yet implemented");
+    ListnewPersonList = new PersonUtility().getAllPerson("C://data//person.txt");
+}
+
+/src/UserTest.java
+==================
+
+
+
+Line No: 15 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 8,col 19)] - Optional[(line 19,col 2)] ] 
+
+{
+    String name1 = "a";
+    String name2 = "b";
+    int age1 = 10;
+    int age2 = 20;
+    // ListnewPersonList = new PersonUtility().getAllPerson ("C://data//hello//person2.txt") ;
+    User user = new User(name1, name2, age1, age2);
+    assertEquals(user.age1, 10);
+}
+
+
+
+Line No: 45 
+
+
+Line No: 46 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 36,col 19)] - Optional[(line 49,col 2)] ] 
+
+{
+    String name1 = "a";
+    String name2 = "b";
+    int age1 = 10;
+    int age2 = 20;
+    User user = new User(name1, name2, age1, age2);
+    assertEquals(user.getName1(), "a");
+    File file = new File("C://data//person2.txt");
+// ListnewPersonList = new PersonUtility().getAllPerson (\"C://data//person2.txt") ;
+}
+
+
+
+Line No: 138 ------->
+Mystry Guest smell found
+ [Lines Optional[(line 129,col 21)] - Optional[(line 142,col 2)] ] 
+
+{
+    String name1 = "a";
+    String name2 = "b";
+    int age1 = 10;
+    int age2 = 20;
+    int age11 = 100;
+    User us = new User(name1, name2, age1, age2);
+    // ListnewPersonList = new PersonUtility().getAllPerson ("C://data//hello//person2.txt") ;
+    assertEquals(us.setAge1(age11), true);
+}
